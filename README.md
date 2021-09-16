@@ -52,6 +52,6 @@ Try<Integer> tryToPrimeDependency(Dependency optionalDependency){
 }
 ```
 
-##Contributions
+## Contributions
 
 Contributions are welcome! See the [graydavid-parent](https://github.com/graydavid/graydavid-parent) project for details.
