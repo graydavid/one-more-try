@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>io.github.graydavid</groupId>
+    <artifactId>graydavid-style-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <relativePath>../graydavid-style-parent/pom.xml</relativePath>
+  </parent>
+  <groupId>io.github.graydavid</groupId>
+  <artifactId>one-more-try</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>${project.groupId}:${project.artifactId}</name>
+  <description>Contains a convenient representation of a Try-like object.</description>
+  <url>http://github.com/graydavid/${project.artifactId}</url>
+  <scm>
+    <connection>scm:git:git://github.com/graydavid/${project.artifactId}.git</connection>
+    <developerConnection>scm:git:ssh://github.com:graydavid/${project.artifactId}.git</developerConnection>
+    <url>http://github.com/graydavid/${project.artifactId}/tree/main</url>
+   </scm>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-checkstyle-plugin</artifactId>        
+        <configuration>
+          <suppressionsLocation>src/build/resources/checkstyle-suppressions.xml</suppressionsLocation>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
